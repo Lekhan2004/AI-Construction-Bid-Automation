@@ -1,0 +1,30 @@
+/* Base transitions for theme switching */
+body {
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+* {
+  transition: border-color 0.4s ease, background-color 0.4s ease;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.dark .custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.dark .custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 20px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #eee;
+  border-radius: 20px;
+}

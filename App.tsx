@@ -16,11 +16,15 @@ const App: React.FC = () => {
   const toggleTheme = () => {
     const newTheme = theme === 'dark' ? 'light' : 'dark';
     setTheme(newTheme);
-    document.documentElement.classList.toggle('dark', newTheme === 'dark');
+    if (newTheme === 'dark') {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
   };
 
   useEffect(() => {
-    // Sync initial state if needed
+    // Ensure dark mode is applied by default on mount
     document.documentElement.classList.add('dark');
   }, []);
 
