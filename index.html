@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AutoBid | AI-Powered Construction Bidding</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --transition-speed: 0.4s;
+      }
+      body {
+        font-family: 'Inter', sans-serif;
+        transition: background-color var(--transition-speed) ease, color var(--transition-speed) ease;
+      }
+      
+      .dark body {
+        background-color: #050505;
+        color: #ffffff;
+      }
+      
+      body:not(.dark) {
+        background-color: #ffffff;
+        color: #0a0a0a;
+      }
+
+      .glass {
+        backdrop-filter: blur(16px);
+        transition: background-color var(--transition-speed), border-color var(--transition-speed), box-shadow var(--transition-speed);
+      }
+      
+      .dark .glass {
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+      }
+      
+      body:not(.dark) .glass {
+        background: rgba(0, 0, 0, 0.03);
+        border: 1px solid rgba(0, 0, 0, 0.08);
+      }
+
+      ::-webkit-scrollbar {
+        width: 10px;
+      }
+      .dark ::-webkit-scrollbar-track {
+        background: #050505;
+      }
+      body:not(.dark) ::-webkit-scrollbar-track {
+        background: #fcfcfc;
+      }
+      .dark ::-webkit-scrollbar-thumb {
+        background: #222;
+        border-radius: 5px;
+        border: 2px solid #050505;
+      }
+      body:not(.dark) ::-webkit-scrollbar-thumb {
+        background: #ddd;
+        border-radius: 5px;
+        border: 2px solid #fcfcfc;
+      }
+    </style>
+    <script type="importmap">
+    {
+      "imports": {
+        "framer-motion": "https://esm.sh/framer-motion@^12.26.0",
+        "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+        "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+        "react/": "https://esm.sh/react@^19.2.3/",
+        "react": "https://esm.sh/react@^19.2.3"
+      }
+    }
+    </script>
+  <link rel="stylesheet" href="/index.css">
+</head>
+  <body class="dark transition-colors duration-500">
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
