@@ -21,9 +21,9 @@ const Hero: React.FC = () => {
             <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
             Next-Gen Construction Intelligence
           </span>
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter mb-8 leading-[1] dark:text-white text-neutral-950">
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter mb-8 leading-[1] text-neutral-400 dark:text-neutral-600">
             Stop Reading PDFs.<br />
-            <span className="text-neutral-400 dark:text-neutral-600">Start Bidding.</span>
+            <span className="dark:text-white text-neutral-950">Start Bidding.</span>
           </h1>
           <p className="max-w-2xl mx-auto text-lg md:text-xl text-neutral-600 dark:text-neutral-400 mb-12 font-medium leading-relaxed">
             Automate the tedious process of finding and estimating government bids. Our Multi-Agent AI parses hundreds of pages in seconds.
